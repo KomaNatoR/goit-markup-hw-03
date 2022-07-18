@@ -1,28 +1,37 @@
  :root {
     
     --accent-color: #2196f3;
-    --main-text-color: #757575; 
+    --main-text-color: #757575;
+    --main-sections-color: #ffffff;
     --title-text-color: #212121;
     --foothero-back-color: #2F303A;
     --background-main-color: #e5e5e5;
-    --back-teambutton-color: #F5F4FA;
+    --back-teamsection-color: #F5F4FA;
     --button-hero-back-color: #188CE8;
     
  }
  
- /* =============================ЗАГАЛЬНІ============================== */
-    body      {
+ /* ============================== ЗАГАЛЬНІ ============================== */
 
-        font-family: "roboto", sans-serif;
-        letter-spacing: 0.03em;
+body {
 
-        background-color: var(--background-main-color);
+    font-family: "roboto", sans-serif;
+    letter-spacing: 0.03em;
+
+    background-color: var(--background-main-color);
+
+    width: 1300px;
      }
-    .list { list-style: none;}
+
+    .list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        }
     .noline {text-decoration: none;}
 
-    .div {background-color: #FFFFFF;}
-    .hidden {
+.div {background-color: #FFFFFF;}
+.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -34,22 +43,35 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            outline: 2px solid red;
+        }
+
  
- /*======================================== ГОЛОВА============================= */
+ /* ============================== ГОЛОВА ============================== */
     .header {
+
         letter-spacing: 0.02em;
 
         background-color: #FFFFFF;
     }
-/* логотип */
-        .logo {
-            font-family: "raleway", sans-serif;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.19;
-            letter-spacing: 0.03em;
+
+/* ---------- логотип ---------- */
+    .logo {
+        font-family: "raleway", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
     
-            color: #ffffff;
+        color: #ffffff;
         }
     
         .logo-web { color: var(--accent-color);       }
@@ -62,83 +84,102 @@
         .logo-studio:focus {color: var(--accent-color); }
 
 
-/* навігація сайту */
+/* ---------- навігація сайту ---------- */
     .link {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
 
         color: var(--title-text-color);
-    }
-.site-nav .link:hover,
-.site-nav .link:focus {color: var(--accent-color);}
-.site-nav .link.current {color: var(--accent-color);}
+        }
+        .link:hover,
+        .link:focus {color: var(--accent-color);}
+        .link.current {color: var(--accent-color);}
     
-.contacts {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-
-color: var(--main-text-color);
-    }
-.contacts:hover, 
-.contacts:focus {
-color: var(--accent-color);
-    }
-/* мейн */
-/* ==========================ГЕРОЙ================================= */
-    .hero {
-
-    color: #FFFFFF;
-    background-color: var(--foothero-back-color);
-    }
-        .hero-title {
-        text-align: center;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-transform: uppercase;
-
-        letter-spacing: 0.06em;
-    }
-        .button {
-        cursor: pointer;
-
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-
-        text-align: center;
-        letter-spacing: 0.06em;
-
-        background-color: var(--accent-color);
-        color: #ffffff;
-        }
-        .button:hover, button:focus {
-        background-color: var(--button-hero-back-color);
-        }
-/* особливості */
-    .section {
-        background-color:  var(--background-main-color);
-    }
-    .features-list-title {
-        font-weight: 700;
+    .contacts {
+        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        text-transform: uppercase;
-
-        color: var(--title-text-color);
-    }
-    .features-list-p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
 
         color: var(--main-text-color);
+        }
+        .contacts:hover, 
+        .contacts:focus {
+        color: var(--accent-color);
+        }
+/* ============================== МЕЙН ============================== */
+/* ------------------------------ ГЕРОЙ ------------------------------ */
+    .hero {
+        text-align: center;
+
+        color: #FFFFFF;
+        background-color: var(--foothero-back-color);
+        }
+
+        .hero-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+                 
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-transform: uppercase;
+
+            letter-spacing: 0.06em;
+            
+            /* background-color: tomato; */
+            }
+
+        .btn {
+            cursor: pointer;
+
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+
+            text-align: center;
+            letter-spacing: 0.06em;
+
+            background-color: var(--accent-color);
+            color: #ffffff;
+            }
+            .btn:hover, btn:focus {
+            background-color: var(--button-hero-back-color);
+            }
+
+/* ------------------------------ особливості ------------------------------ */
+    .features {
+        background-color: var(--main-sections-color );
+        }
+        .features-list-title {
+            margin-top: 0;
+            
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+
+            color: var(--title-text-color);
+            }
+        .features-list-p {
+            margin-bottom: 0;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+
+            color: var(--main-text-color);
+            }
+
+/* ------------------------------ чим займаємося ------------------------------ */
+.ourworks {
+    background-color: var(--main-sections-color);
     }
-/* чим займаємося */
-    .works-title {
+
+    .ourworks-title {
+        margin-top: 0;
+        
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -146,51 +187,61 @@ color: var(--accent-color);
 
         color: var(--title-text-color);
     }
-/* наша команда */
+/* ----------------------------- наша команда ------------------------------ */
     .team {
-        background-color: var(--back-teambutton-color);
+        background-color: var(--back-teamsection-color);
     }
-    .team-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
+        .team-title {
+            margin-top: 0;
 
-        color: var(--title-text-color);
-    }
-    .team-list-title {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
 
-        color: var(--title-text-color);
-    }
-    .team-list-p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;
+            color: var(--title-text-color);
+        }
+        .team-list-card {background-color: #ffffff;}
+        .team-card-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
 
-        color: var(--main-text-color);
-    }
-/* ноги */
+            color: var(--title-text-color);
+        }
+        .team-card-text {
+            margin-bottom: 0;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+
+            color: var(--main-text-color);
+        }
+
+/* ============================== НОГИ ========================= */
     .footer {
-    background-color: var(--foothero-back-color);
+        background-color: var(--foothero-back-color);
     }
 
-    .address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+        .address {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            
+            color: #ffffff;
+        }
 
-    color: #ffffff;}
-    .contacts-down {
+            .contacts-down {
 
-    color: rgb(255,255,255,60%);}
-    .contacts-down:hover, .contacts-down:focus {color: var(--accent-color);}
-/* -------------------------ПОРТФОЛІО----------------------------------- */
+            color: rgb(255,255,255,60%);}
+            .contacts-down:hover, .contacts-down:focus {color: var(--accent-color);}
+
+/* ============================================================= */
+/* ========================= ПОРТФОЛІО ========================= */
 
 /* кнопки */
     .button-portfolio {
