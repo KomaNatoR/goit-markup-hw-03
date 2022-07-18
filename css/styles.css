@@ -51,7 +51,7 @@ body {
             padding-left: 15px;
             padding-right: 15px;
 
-            outline: 2px solid red;
+            /* outline: 2px solid red; */
         }
 
  
@@ -201,28 +201,36 @@ body {
 
             color: var(--title-text-color);
         }
-        .team-list-card {background-color: #ffffff;}
-        .team-card-title {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.18;
-            text-align: center;
+        .team-list-card {
+            width: 270px;
+            height: 368px;
 
-            color: var(--title-text-color);
-        }
-        .team-card-text {
-            margin-bottom: 0;
+            background-color: #ffffff;}
 
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.18;
-            text-align: center;
+            .team-card-title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.18;
+                text-align: center;
 
-            color: var(--main-text-color);
-        }
+                color: var(--title-text-color);
+            }
+            .team-card-text {
+                margin-bottom: 0;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.18;
+                text-align: center;
+
+                color: var(--main-text-color);
+            }
 
 /* ============================== НОГИ ========================= */
     .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         background-color: var(--foothero-back-color);
     }
 
