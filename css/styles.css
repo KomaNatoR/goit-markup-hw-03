@@ -19,8 +19,7 @@ body {
     letter-spacing: 0.03em;
 
     background-color: var(--background-main-color);
-
-     }
+}
 
     .list {
         padding: 0;
@@ -29,7 +28,9 @@ body {
         }
     .noline {text-decoration: none;}
 
-.div {background-color: #FFFFFF;}
+    ul, ol {margin: 0; padding: 0;}
+    p, h1, h2, h3, h4, h5, h6 {margin: 0;}    
+
 .hidden {
     position: absolute;
     width: 1px;
@@ -61,6 +62,7 @@ body {
 
         background-color: #FFFFFF;
     }
+    .header-container {}
 
 /* ---------- логотип ---------- */
     .logo {
@@ -109,22 +111,27 @@ body {
 /* ============================== МЕЙН ============================== */
 /* ------------------------------ ГЕРОЙ ------------------------------ */
     .hero {
-        text-align: center;
-
         color: #FFFFFF;
         background-color: var(--foothero-back-color);
         }
 
+        .hero-container {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
         .hero-title {
-            margin-top: 0;
             margin-bottom: 30px;
-                 
+     
             font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
             text-transform: uppercase;
 
             letter-spacing: 0.06em;
+
+            width: 100%;
+            max-width: 696px;
             
             /* background-color: tomato; */
             }
@@ -143,7 +150,7 @@ body {
             background-color: var(--accent-color);
             color: #ffffff;
             }
-            .btn:hover, btn:focus {
+            .btn:hover, .btn:focus {
             background-color: var(--button-hero-back-color);
             }
 
@@ -152,7 +159,6 @@ body {
         background-color: var(--main-sections-color );
         }
         .features-list-title {
-            margin-top: 0;
             
             font-weight: 700;
             font-size: 14px;
@@ -162,7 +168,6 @@ body {
             color: var(--title-text-color);
             }
         .features-list-p {
-            margin-bottom: 0;
 
             font-weight: 400;
             font-size: 14px;
@@ -177,7 +182,6 @@ body {
     }
 
     .ourworks-title {
-        margin-top: 0;
         
         font-weight: 700;
         font-size: 36px;
@@ -191,7 +195,6 @@ body {
     background-color: var(--back-teamsection-color);
 }
     .team-title {
-        margin-top: 0;
 
         font-weight: 700;
         font-size: 36px;
