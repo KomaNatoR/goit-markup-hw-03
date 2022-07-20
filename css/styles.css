@@ -135,13 +135,12 @@ body {
         
         color: #FFFFFF;
         background-color: var(--foothero-back-color);
-        }
 
-        .hero-container {
-            padding-top: 200px;
-            padding-bottom: 200px;
-            text-align: center;
-        }
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+        .hero-container { }
 
         .hero-title {
             margin-bottom: 30px;
@@ -170,10 +169,17 @@ body {
             text-align: center;
             letter-spacing: 0.06em;
 
+            width: 200px;
+            height: calc( 100% / 4);
             background-color: var(--accent-color);
             color: #ffffff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: 0;
             }
             .btn:hover, .btn:focus {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
             background-color: var(--button-hero-back-color);
             }
 
@@ -252,6 +258,10 @@ body {
     }
     .team-list {display: flex;}
 
+    .team-list-item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
     .team-list-item:not( :last-child) {margin-right: 30px;}
     .team-list-card {
         width: 270px;
@@ -291,6 +301,8 @@ body {
 }
 
     .address {
+        margin-top: 20px;
+
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
