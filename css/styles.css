@@ -57,7 +57,11 @@ body {
             padding-top: 74px;
             padding-bottom: 74px;
         }
- 
+ image {
+    display: block;
+    max-width: 100%;
+    height: auto;  
+}
  /* ============================== ГОЛОВА ============================== */
     .header {
 
@@ -185,16 +189,12 @@ body {
 
 /* ------------------------------ особливості ------------------------------ */
     .features {
-        background-color: var(--main-sections-color);
-        
-    }
-        .features-container {
-            padding-top: 94px;
-            padding-bottom: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
 
-            background-color: var(--main-sections-color);
-            outline: 2px solid red;
-        }
+        background-color: var(--main-sections-color);
+    }
+        .features-container {}
 
         .features-list {display: flex;}
         .features-list-item {width: 270px;}
@@ -221,9 +221,10 @@ body {
 
 /* ------------------------------ чим займаємося ------------------------------ */
 .ourworks {
+    padding-bottom: 94px;
     background-color: var(--main-sections-color);
     }
-    .ourworks-container {padding-bottom: 94px;}
+    .ourworks-container {}
 
     .ourworks-title {
         margin-bottom: 50px;
@@ -238,9 +239,12 @@ body {
     .ourworks-list {display: flex;}
     .ourworks-list-item:not( :last-child) {margin-right: 30px;}
 
-    .ourworks-img {display: inline;}
+    .ourworks-img {display: block;}
 /* ----------------------------- наша команда ------------------------------ */
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--back-teamsection-color);
 }
     .team-title {
@@ -252,10 +256,8 @@ body {
 
         color: var(--title-text-color);
     }
-    .team-container {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    .team-container {    }
+
     .team-list {display: flex;}
 
     .team-list-item {
@@ -269,7 +271,7 @@ body {
 
         background-color: #ffffff;
     }
-        .team-list-img {margin-bottom: 30px;}
+        .team-list-img {display: block; margin-bottom: 30px;}
 
         .team-card-title {
             margin-bottom: 10px;
