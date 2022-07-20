@@ -183,11 +183,11 @@ body {
         
     }
         .features-container {
-            margin-top: 94px;
-            margin-bottom: 94px;
+            padding-top: 94px;
+            padding-bottom: 94px;
 
             background-color: var(--main-sections-color);
-            /* outline: 2px solid red; */
+            outline: 2px solid red;
         }
 
         .features-list {display: flex;}
@@ -195,6 +195,7 @@ body {
         .features-list-item:not( :last-child) {margin-right: 30px;}
 
         .features-list-title {
+            margin-bottom: 10px;
             
             font-weight: 700;
             font-size: 14px;
@@ -216,8 +217,10 @@ body {
 .ourworks {
     background-color: var(--main-sections-color);
     }
+    .ourworks-container {padding-bottom: 94px;}
 
     .ourworks-title {
+        margin-bottom: 50px;
         
         font-weight: 700;
         font-size: 36px;
@@ -226,6 +229,10 @@ body {
 
         color: var(--title-text-color);
     }
+    .ourworks-list {display: flex;}
+    .ourworks-list-item:not( :last-child) {margin-right: 30px;}
+
+    .ourworks-img {display: inline;}
 /* ----------------------------- наша команда ------------------------------ */
 .team {
     background-color: var(--back-teamsection-color);
@@ -239,13 +246,24 @@ body {
 
         color: var(--title-text-color);
     }
+    .team-container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .team-list {display: flex;}
+
+    .team-list-item:not( :last-child) {margin-right: 30px;}
     .team-list-card {
         width: 270px;
         height: 368px;
 
-        background-color: #ffffff;}
+        background-color: #ffffff;
+    }
+        .team-list-img {margin-bottom: 30px;}
 
         .team-card-title {
+            margin-bottom: 10px;
+            
             font-weight: 500;
             font-size: 16px;
             line-height: 1.18;
