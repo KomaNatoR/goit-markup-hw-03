@@ -65,7 +65,10 @@ body {
 
         background-color: #FFFFFF;
     }
-    .header-container {}
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
 
 /* ---------- логотип ---------- */
     .logo {
@@ -89,7 +92,17 @@ body {
 
 
 /* ---------- навігація сайту ---------- */
+.navsite {margin-left: 90px;}
+    .navsite-list {
+        display: flex;
+    }
+    .navsite-item:not( :last-child) {margin-right: 50px;}
+
     .link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -100,6 +113,10 @@ body {
         .link:focus {color: var(--accent-color);}
         .link.current {color: var(--accent-color);}
     
+    .contacts-list {
+        display: flex;
+        margin-left: auto;
+    }
     .contacts {
         font-weight: 500;
         font-size: 14px;
@@ -107,6 +124,7 @@ body {
 
         color: var(--main-text-color);
         }
+        .contacts[href^="mail"] {margin-right: 50px;}
         .contacts:hover, 
         .contacts:focus {
         color: var(--accent-color);
@@ -114,6 +132,7 @@ body {
 /* ============================== МЕЙН ============================== */
 /* ------------------------------ ГЕРОЙ ------------------------------ */
     .hero {
+        
         color: #FFFFFF;
         background-color: var(--foothero-back-color);
         }
@@ -121,6 +140,7 @@ body {
         .hero-container {
             padding-top: 200px;
             padding-bottom: 200px;
+            text-align: center;
         }
 
         .hero-title {
@@ -133,10 +153,10 @@ body {
 
             letter-spacing: 0.06em;
 
-            width: 100%;
+            width: 77%;
             max-width: 696px;
-            
-            /* background-color: tomato; */
+/*             
+            background-color: tomato; */
             }
 
         .btn {
@@ -159,8 +179,21 @@ body {
 
 /* ------------------------------ особливості ------------------------------ */
     .features {
-        background-color: var(--main-sections-color );
+        background-color: var(--main-sections-color);
+        
+    }
+        .features-container {
+            margin-top: 94px;
+            margin-bottom: 94px;
+
+            background-color: var(--main-sections-color);
+            /* outline: 2px solid red; */
         }
+
+        .features-list {display: flex;}
+        .features-list-item {width: 270px;}
+        .features-list-item:not( :last-child) {margin-right: 30px;}
+
         .features-list-title {
             
             font-weight: 700;
