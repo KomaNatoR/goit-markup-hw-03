@@ -99,8 +99,8 @@ body {
 .navsite {margin-left: 90px;}
     .navsite-list {
         display: flex;
+        column-gap: 50px;
     }
-    .navsite-item:not( :last-child) {margin-right: 50px;}
 
     .link {
         display: block;
@@ -120,6 +120,7 @@ body {
     .contacts-list {
         display: flex;
         margin-left: auto;
+        column-gap: 50px;
     }
     .contacts {
         font-weight: 500;
@@ -128,7 +129,7 @@ body {
 
         color: var(--main-text-color);
         }
-        .contacts[href^="mail"] {margin-right: 50px;}
+        
         .contacts:hover, 
         .contacts:focus {
         color: var(--accent-color);
@@ -192,11 +193,13 @@ body {
 
         background-color: var(--main-sections-color);
     }
-        .features-container {}
 
-        .features-list {display: flex;}
-        .features-list-item {width: 270px;}
-        .features-list-item:not( :last-child) {margin-right: 30px;}
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .features-list-item {width: calc((100% - 90px) / 4);}
 
         .features-list-title {
             margin-bottom: 10px;
@@ -222,7 +225,6 @@ body {
     padding-bottom: 94px;
     background-color: var(--main-sections-color);
     }
-    .ourworks-container {}
 
     .ourworks-title {
         margin-bottom: 50px;
@@ -234,8 +236,10 @@ body {
 
         color: var(--title-text-color);
     }
-    .ourworks-list {display: flex;}
-    .ourworks-list-item:not( :last-child) {margin-right: 30px;}
+    .ourworks-list {
+        display: flex;
+        gap: 30px;
+    }
 
     .ourworks-img {display: block;}
 /* ----------------------------- наша команда ------------------------------ */
@@ -250,19 +254,21 @@ body {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-            text-align: center;
+        text-align: center;
 
         color: var(--title-text-color);
     }
-    .team-container {    }
 
-    .team-list {display: flex;}
+    .team-list {
+        display: flex;
+        gap: 30px;
+    }
 
     .team-list-item {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
-    .team-list-item:not( :last-child) {margin-right: 30px;}
+    
     .team-list-card {
         width: 270px;
         height: 368px;
