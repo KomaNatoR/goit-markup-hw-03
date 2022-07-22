@@ -54,8 +54,8 @@ body {
             /* outline: 2px solid red; */
         }
         .section {
-            padding-top: 74px;
-            padding-bottom: 74px;
+            padding-top: 94px;
+            padding-bottom: 94px;
         }
  img {
     display: block;
@@ -190,9 +190,6 @@ body {
 
 /* ------------------------------ особливості ------------------------------ */
     .features {
-        padding-top: 94px;
-        padding-bottom: 94px;
-
         background-color: var(--main-sections-color);
     }
 
@@ -373,7 +370,7 @@ body {
         width: calc((100% - 60px) / 3);
 
         background-color: var(--main-sections-color);
-        outline: 1px solid #EEEEEE;
+        border: 1px solid #EEEEEE;
     }
 
     .port-list-title {
