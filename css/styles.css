@@ -57,7 +57,7 @@ body {
             padding-top: 74px;
             padding-bottom: 74px;
         }
- image {
+ img {
     display: block;
     max-width: 100%;
     height: auto;  
@@ -143,11 +143,13 @@ body {
 
         padding-top: 200px;
         padding-bottom: 200px;
+        
     }
 
         .hero-container { }
 
         .hero-title {
+
             margin-bottom: 30px;
      
             font-weight: 900;
@@ -265,17 +267,13 @@ body {
     }
 
     .team-list-item {
+        padding-bottom: 30px;
+        width: calc((100%-90px) / 4);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
 
-    .team-list-card {
-        width: 270px;
-        height: 368px;
-
-        background-color: #ffffff;
-    }
-        .team-list-img {display: block; margin-bottom: 30px;}
+        .team-list-img {margin-bottom: 30px;}
 
         .team-card-title {
             margin-bottom: 10px;
@@ -364,8 +362,24 @@ body {
         color: #ffffff;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-/* секції */
+/* ------------ вибірка ------------ */
+.select-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+    .select-list-item {
+        padding-bottom: 30px;
+        width: calc((100% - 60px) / 3);
+
+        background-color: var(--main-sections-color);
+        outline: 1px solid #EEEEEE;
+    }
+
     .port-list-title {
+        margin-top: 20px;
+        margin-left: 24px;
+        
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -374,6 +388,9 @@ body {
         color: var(--title-text-color);
     }
     .port-list-p {
+        margin-top: 4px;
+        margin-left: 24px;
+
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
